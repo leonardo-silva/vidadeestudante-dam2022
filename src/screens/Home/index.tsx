@@ -1,12 +1,12 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 
-import { styles } from './styles';
+import { Container } from './styles';
 
 export function Home() {
   return (
-    <View style={styles.container}>
+    <Container>
       <Text>Open up App.js to start working on your app!</Text>
-    </View>
+    </Container>
   );
 }
