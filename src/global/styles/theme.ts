@@ -14,5 +14,10 @@ export default {
         income: '#12A454',
         expense: '#E83F5B',
         highlight: '#FF872C',
-    }
+    },
+    fonts: {
+        regular: 'Poppins_400Regular',
+        medium: 'Poppins_500Medium',
+        bold: 'Poppins_700Bold'
+    } 
 }
