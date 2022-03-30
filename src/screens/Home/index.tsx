@@ -1,11 +1,31 @@
 import React from 'react';
 
-import { Container, Title } from './styles';
+import { 
+  Container, 
+  Header,
+  ContentWrapper,
+  UserInfo,
+  Photo,
+  User,
+  UserGreeting,
+  UserName, 
+} from './styles';
 
 export function Home() {
   return (
     <Container>
-      <Title>Vida de Estudante!</Title>
+      <Header>
+        <ContentWrapper>
+          <UserInfo>
+            <Photo source={{ uri: 'https://github.com/leonardo-silva.png'}}/>
+            <User>
+              <UserGreeting>Olá, </UserGreeting>
+              <UserName>Leonardo</UserName>
+            </User>
+          </UserInfo>
+
+        </ContentWrapper>
+      </Header>
     </Container>
   );
 }
