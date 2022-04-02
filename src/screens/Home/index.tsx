@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { MaterialIcons } from '@expo/vector-icons';
+
 import { 
   Container, 
   Header,
@@ -8,7 +10,8 @@ import {
   Photo,
   User,
   UserGreeting,
-  UserName, 
+  UserName,
+  Icon 
 } from './styles';
 
 export function Home() {
@@ -23,6 +26,8 @@ export function Home() {
               <UserName>Leonardo</UserName>
             </User>
           </UserInfo>
+
+          <Icon name="logout"/>
 
         </ContentWrapper>
       </Header>

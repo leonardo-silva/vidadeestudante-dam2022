@@ -1,5 +1,6 @@
 import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
 import styled from 'styled-components/native';
+import { MaterialIcons } from '@expo/vector-icons';
 
 export const Container = styled.View`
     flex: 1;
@@ -19,6 +20,9 @@ export const ContentWrapper = styled.View`
     width: 100%;
     padding: 0 24px;
     flex-direction: row;
+
+    align-items: center;
+    justify-content: space-between;
 `;
 
 export const UserInfo = styled.View`
@@ -48,4 +52,9 @@ export const UserName = styled.Text`
     font-family: ${({ theme }) => theme.fonts.bold};
     font-size: ${RFValue(18)}px;
     line-height: ${RFValue(24)}px;
+`;
+
+export const Icon = styled(MaterialIcons)`
+    color: ${({ theme }) => theme.colors.shape};
+    font-size: ${RFValue(24)}px;
 `;
