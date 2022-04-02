@@ -11,8 +11,10 @@ import {
   User,
   UserGreeting,
   UserName,
-  Icon 
+  Icon, 
+  HighlightCards
 } from './styles';
+import { HighlightCard } from '../../components/HighlightCard';
 
 export function Home() {
   return (
@@ -31,6 +33,12 @@ export function Home() {
 
         </ContentWrapper>
       </Header>
+
+      <HighlightCards>
+        <HighlightCard />
+        <HighlightCard />
+      </HighlightCards>
+
     </Container>
   );
 }

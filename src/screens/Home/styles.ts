@@ -58,3 +58,9 @@ export const Icon = styled(MaterialIcons)`
     color: ${({ theme }) => theme.colors.shape};
     font-size: ${RFValue(24)}px;
 `;
+
+export const HighlightCards = styled.ScrollView.attrs({
+    horizontal: true,
+    showsHorizontalScrollIndicator: false,
+    contentContainerStyle: { paddingLeft: 24 }
+})``;
