@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { MaterialIcons } from '@expo/vector-icons';
-
 import { 
   Container, 
   Header,
@@ -35,8 +33,24 @@ export function Home() {
       </Header>
 
       <HighlightCards>
-        <HighlightCard />
-        <HighlightCard />
+        <HighlightCard 
+          title='Entrada'
+          amount='R$ 400,00'
+          lastTransaction='Última entrada dia 13 de abril'
+          type='income'
+        />
+        <HighlightCard 
+          title='Saída'
+          amount='R$ 539,00'
+          lastTransaction='Última saída dia 03 de abril'
+          type='expense'
+        />
+        <HighlightCard 
+          title='Total'
+          amount='R$ 139,00'
+          lastTransaction='01 à 16 de abril'
+          type='total'
+        />
       </HighlightCards>
 
     </Container>
