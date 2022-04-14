@@ -12,6 +12,7 @@ import {
 } from '@expo-google-fonts/poppins';
 
 import { Home } from './src/screens/Home';
+import { Register } from './src/screens/Register';
 
 import theme from './src/global/styles/theme';
 
@@ -29,7 +30,7 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <StatusBar style="light" />
-      <Home />
+      <Register />
     </ThemeProvider>
   );
 }
