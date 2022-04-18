@@ -6,8 +6,11 @@ export const Container = styled.View`
     flex: 1;
 `;
 
+export const Fields = styled.View``;
+
 export const Form = styled.View`
     flex: 1;
+    justify-content: space-between;
     padding: 24px;
 `;
 
