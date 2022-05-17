@@ -4,8 +4,11 @@ import styled from 'styled-components/native';
 import { MaterialIcons } from '@expo/vector-icons';
 
 import { FlatList, FlatListProps } from 'react-native';
+import { BorderlessButton } from 'react-native-gesture-handler';
 
 import { DataListProps } from '.';
+
+export const Button = styled(BorderlessButton)``;
 
 export const Container = styled.View`
     flex: 1;

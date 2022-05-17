@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { 
+  Button,
   Container, 
   Header,
   ContentWrapper,
@@ -18,6 +19,7 @@ import {
 
 import { HighlightCard } from '../../components/HighlightCard';
 import { TransactionCard, TransactionCardProps } from '../../components/TransactionCard';
+import { Alert } from 'react-native';
 
 export interface DataListProps extends TransactionCardProps {
   id: string;
@@ -72,8 +74,10 @@ export function Home() {
             </User>
           </UserInfo>
 
-          <Icon name="logout"/>
-
+          <Button 
+            onPress={() => Alert.alert("TODO: Implementar logout!")}>
+            <Icon name="logout"/>
+          </Button>
         </ContentWrapper>
       </Header>
 
